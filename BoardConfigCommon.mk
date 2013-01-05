@@ -17,14 +17,7 @@
 include device/zte/msm7x27-common/BoardConfigCommon.mk
 include vendor/zte/blade2/BoardConfigVendor.mk
 
-TARGET_RECOVERY_INITRC := device/zte/blade2/recovery/recovery.rc
-
-# Kernel
-ifdef P736E
-TARGET_KERNEL_CONFIG := blade2_jb_p736e_defconfig
-else
-TARGET_KERNEL_CONFIG := blade2_jb_p736v_defconfig
-endif
+TARGET_RECOVERY_INITRC := device/zte/blade2-common/recovery/recovery.rc
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=blade2 console=null
 
@@ -45,8 +38,8 @@ WIFI_BAND := 802_11_ABG
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUEDROID_VENDOR_CONF := device/zte/blade2/bluetooth/libbt_vndcfg.txt
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/zte/blade2/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/zte/blade2-common/bluetooth/libbt_vndcfg.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/zte/blade2-common/bluetooth
 
 # dev:    size   erasesize  name
 # mtd0: 00600000 00020000 "recovery"
