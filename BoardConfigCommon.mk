@@ -21,9 +21,6 @@ TARGET_RECOVERY_INITRC := device/zte/blade2-common/recovery/recovery.rc
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=blade2 console=null
 
-TARGET_BOOTLOADER_NAME := blade2
-TARGET_OTA_ASSERT_DEVICE := blade2
-
 # Wi-Fi
 BOARD_WLAN_DEVICE := bcmdhd
 WPA_SUPPLICANT_VERSION := VER_0_8_X
