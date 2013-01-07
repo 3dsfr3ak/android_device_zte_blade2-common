@@ -22,6 +22,9 @@ TARGET_RECOVERY_INITRC := device/zte/blade2-common/recovery/recovery.rc
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=blade2 console=null
 
+# Touchscreen
+BOARD_USE_LEGACY_TOUCHSCREEN := true
+
 # Wi-Fi
 BOARD_WLAN_DEVICE := bcmdhd
 WPA_SUPPLICANT_VERSION := VER_0_8_X
