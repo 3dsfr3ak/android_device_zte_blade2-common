@@ -32,6 +32,7 @@ WIFI_DRIVER_FW_PATH_AP := "/system/etc/fw_4330b1.bin"
 WIFI_DRIVER_FW_PATH_STA := "/system/etc/fw_4330_b1_apsta.bin"
 WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/etc/fw_4330b1.bin nvram_path=/system/etc/nv_4330b1.txt iface_name=wlan"
 WIFI_DRIVER_MODULE_NAME := "dhd"
+WIFI_DRIVER_LOADER_REUSE := true
 WIFI_BAND := 802_11_ABG
 
 # Bluetooth

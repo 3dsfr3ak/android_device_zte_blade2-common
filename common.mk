@@ -14,8 +14,9 @@
 # limitations under the License.
 #
 
-include device/zte/msm7x27-common/common.mk
+$(call inherit-product, device/zte/msm7x27-common/common.mk)
 $(call inherit-product, vendor/zte/blade2/blade2-vendor.mk)
+$(call inherit-product-if-exists, device/zte/blade2-common/packages.mk)
 
 # Packages
 PRODUCT_PACKAGES += \
