@@ -15,6 +15,7 @@
 #
 
 PRODUCT_PACKAGES += \
-    Email \
     Chronus \
+    CMUpdater \
+    Email \
     LockClock
