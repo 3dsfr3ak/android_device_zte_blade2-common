@@ -54,16 +54,6 @@ PRODUCT_COPY_FILES += \
         device/zte/blade2-common/firmware/nv_4330b1.txt:system/etc/nv_4330b2.txt \
         device/zte/blade2-common/init.wlanprop.sh:system/etc/init.wlanprop.sh
 
-# Graphics
-PRODUCT_COPY_FILES += \
-        device/zte/blade2-common/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-        device/zte/blade2-common/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-        device/zte/blade2-common/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-        device/zte/blade2-common/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-        device/zte/blade2-common/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-        device/zte/blade2-common/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-        device/zte/blade2-common/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-
 # Permissions
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
