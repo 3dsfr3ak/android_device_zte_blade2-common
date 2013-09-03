@@ -54,6 +54,12 @@ PRODUCT_COPY_FILES += \
         device/zte/blade2-common/firmware/nv_4330b1.txt:system/etc/nv_4330b2.txt \
         device/zte/blade2-common/init.wlanprop.sh:system/etc/init.wlanprop.sh
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+        device/zte/blade2-common/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
+        system/bluetooth/data/main.le.conf:system/etc/bluetooth/main.conf \
+        device/zte/blade2-common/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+
 # Permissions
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
