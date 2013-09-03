@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
+# Define BOARD_HAVE_BLUETOOTH_BLUEZ before device/qcom/msm7x27/BoardConfigCommon.mk
+# Bluetooth
+BOARD_HAVE_BLUETOOTH_BLUEZ := true
+BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/zte/blade2-common/bluetooth
+
 include device/zte/msm7x27-common/BoardConfigCommon.mk
 include vendor/zte/blade2/BoardConfigVendor.mk
 
@@ -24,6 +30,12 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=blade2 console=null
 
 # Touchscreen
 BOARD_USE_LEGACY_TOUCHSCREEN := true
+
+# Graphics
+BOARD_EGL_NEEDS_LEGACY_FB := true
+TARGET_NO_HW_VSYNC := false
+COMMON_GLOBAL_CFLAGS += -DANCIENT_GL
+COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60
 
 # Wi-Fi
 BOARD_WLAN_DEVICE := bcmdhd
@@ -37,11 +49,6 @@ WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/etc/fw_4330b1.bin nvram_path=/s
 WIFI_DRIVER_MODULE_NAME := "dhd"
 WIFI_DRIVER_LOADER_REUSE := true
 WIFI_BAND := 802_11_ABG
-
-# Bluetooth
-BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUEDROID_VENDOR_CONF := device/zte/blade2-common/bluetooth/libbt_vndcfg.txt
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/zte/blade2-common/bluetooth
 
 # dev:    size   erasesize  name
 # mtd0: 00600000 00020000 "recovery"
