@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
 
 # Files
 PRODUCT_COPY_FILES += \
+        device/zte/blade2-common/fstab.blade2:root/fstab.blade2 \
         device/zte/blade2-common/ramdisk/init.blade2.rc:root/init.blade2.rc \
         device/zte/blade2-common/ramdisk/init.blade2.usb.rc:root/init.blade2.usb.rc \
         device/zte/blade2-common/ramdisk/ueventd.blade2.rc:root/ueventd.blade2.rc \

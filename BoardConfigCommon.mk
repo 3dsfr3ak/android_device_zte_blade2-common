@@ -18,7 +18,7 @@ include device/zte/msm7x27-common/BoardConfigCommon.mk
 include vendor/zte/blade2/BoardConfigVendor.mk
 
 TARGET_RECOVERY_INITRC := device/zte/blade2-common/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/zte/blade2-common/recovery/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/zte/blade2-common/fstab.blade2
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=blade2 console=null
 

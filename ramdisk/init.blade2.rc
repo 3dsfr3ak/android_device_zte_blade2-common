@@ -119,6 +119,9 @@ on boot
     write /sys/devices/platform/mass_storage/lun0/file /dev/block/mmcblk0p1
     write /sys/bus/platform/drivers/msm_sdcc/msm_sdcc.1/polling 1
 
+on fs
+    mount_all /fstab.blade2
+
 service qmuxd /system/bin/qmuxd
     class main
     user radio
