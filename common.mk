@@ -58,7 +58,6 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_COPY_FILES += \
         device/zte/blade2-common/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
-        system/bluetooth/data/main.le.conf:system/etc/bluetooth/main.conf \
         device/zte/blade2-common/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 # Permissions
