@@ -8,7 +8,17 @@ userdata                /data           yaffs2          nosuid,nodev,noauto_da_a
 misc                    /misc           mtd             defaults                                recoveryonly
 recovery                /recovery       mtd             defaults                                recoveryonly
 system                  /system         yaffs2          ro,realtime                             recoveryonly
-/dev/block/mmcblk0p1    /sdcard         auto            defaults                                recoveryonly
 /dev/block/mmcblk0p2    /sd-ext         auto            defaults                                recoveryonly
 
 /devices/platform/msm_sdcc.1/mmc_host/mmc0		 auto        auto        defaults    voldmanaged=sdcard0:auto
+
+# dev:    size   erasesize  name
+# mtd0: 00600000 00020000 "recovery"
+# mtd1: 00400000 00020000 "boot"
+# mtd2: 00180000 00020000 "splash"
+# mtd3: 00080000 00020000 "misc"
+# mtd4: 03980000 00020000 "cache"
+# mtd5: 0dc00000 00020000 "system"
+# mtd6: 0a280000 00020000 "userdata"
+# mtd7: 00100000 00020000 "oem"
+# mtd8: 00180000 00020000 "persist"
