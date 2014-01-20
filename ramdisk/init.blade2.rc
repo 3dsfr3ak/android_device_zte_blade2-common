@@ -83,6 +83,9 @@ on boot
     chown bluetooth net_bt_stack /sys/devices/platform/msm_serial_hs.0/clock
     chmod 0660 /sys/devices/platform/msm_serial_hs.0/clock
 
+# zRAM
+    write /proc/sys/vm/page-cluster 0
+
 # Sensors
     chmod 0777 /dev/akm8962_aot
     chmod 0777 /dev/akm8962_dev
@@ -143,6 +146,8 @@ on fs
     mount yaffs2 mtd@system /system ro remount
     mount yaffs2 mtd@userdata /data nosuid nodev
     mount yaffs2 mtd@cache /cache nosuid nodev
+ # zRAM
+    swapon_all /fstab.blade2
 
 service qmuxd /system/bin/qmuxd
     class main

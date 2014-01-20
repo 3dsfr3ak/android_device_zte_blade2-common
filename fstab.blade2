@@ -11,6 +11,7 @@ system                  /system         yaffs2          ro,realtime             
 /dev/block/mmcblk0p2    /sd-ext         auto            defaults                                recoveryonly
 
 /devices/platform/msm_sdcc.1/mmc_host/mmc0		 auto        auto        defaults    voldmanaged=sdcard0:auto
+/dev/block/zram0        none            swap            defaults                                zramsize=67108864
 
 # dev:    size   erasesize  name
 # mtd0: 00600000 00020000 "recovery"
